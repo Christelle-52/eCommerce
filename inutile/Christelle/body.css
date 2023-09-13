@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #F5F5F5;
+	font-size: 16px;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 54px;
+	font-weight: 700;
+	color: #85147A;
+	text-shadow: 2px 0 #1f1f1f, -2px 0 #1f1f1f, 0 2px #1f1f1f, 0 -2px #1f1f1f,
+		1px 1px #1f1f1f, -1px -1px #1f1f1f, 1px -1px #1f1f1f, -1px 1px #1f1f1f;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 48px;
+	font-style: italic;
+	font-weight: 700;
+	border-bottom: solid 1px #9747FF;
+	padding: 5px 0 5px 10%;
+}
+
+h3 {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	padding-left: 70px;
+	text-align: center;
+}
+
+h4 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	border-bottom: solid 1px #9747FF;
+	padding: 40px 0 10px 0;
+}
+
+.bodyBold {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+
+}
+.bodyBold p {
+	margin-top: 14px;
+}
+p {
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+.cta {
+	background-color: #EF6632;
+	border: solid 3px #85147A;
+	border-radius: 30px;
+	color: #F5F5F5;
+	font-weight: 800;
+	font-size: 32px;
+	padding: 2px 3%;
+	text-align: center;
+	text-decoration: none;
+	width: fit-content;
+}
+
+.cta:hover {
+	background-color: #F5A080;
+	border: solid 3px #9747FF;
+	border-radius: 30px;
+	color: #1f1f1f;
+	font-weight: 800;
+	font-size: 32px;
+	padding: 2px 3%;
+	text-align: center;
+	width: fit-content;
+
+}
+
+.ctaSmall {
+	background-color: #EF6632;
+	border: solid 2px #85147A;
+	border-radius: 35px;
+	color: #F5F5F5;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 2px 1%;
+	text-align: center;
+	text-decoration: none;
+	width: fit-content;
+	padding: 5px 10px;
+	margin:10px auto ;
+}
+
+.ctaSmall:hover {
+	background-color: #F5A080;
+	border: solid 2px #9747FF;
+	border-radius: 30px;
+	color: #1f1f1f;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 2px 1%;
+	text-align: center;
+	width: fit-content;
+	padding: 5px 10px;
+	margin:10px auto ;
+}

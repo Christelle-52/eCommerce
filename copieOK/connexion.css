@@ -1,0 +1,50 @@
+.connexion {
+  background-image: url(images/connexion2.png);
+  display: flex;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border: solid 2px #85147A;
+  margin: 15px auto;
+  align-items: center;
+}
+
+.connexion .formulaire {
+  margin-top: 0;
+  padding-top: 50%;
+
+}
+
+.champsForm input:focus {
+  border: solid 2px #C2834B;
+}
+
+.mdp {
+  position: relative;
+}
+
+.mdp input:focus {
+  border: solid 2px #C2834B;
+}
+
+.mdp .password-icon {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  display: flex;
+  color: #85147A;
+  align-items: center;
+  transform: translateY(-50%);
+  transition: all 0.2s;
+  width: 40px;
+}
+
+.password-icon :hover {
+  cursor: pointer;
+  color: #C2834B;
+}
+
+.mdp .password-icon .feather-eye-off {
+  display: none;
+}
