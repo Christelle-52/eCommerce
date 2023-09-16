@@ -174,15 +174,15 @@
   <main>
     <section class="container inscription">
       <div class="row gx-3 justify-content-end">
-        <form class="col-xl-6 col-md-6 col-12 formulaire">
+        <form id="formulaire" class="col-xl-6 col-md-6 col-12 formulaire">
           <div class="row champsForm">
             <div class="col-lg-6 col-md-12">
               <label for="inputPrenom" class="form-label">Votre prénom *</label>
-              <input type="text" class="form-control" id="inputPrenom" placeholder="Votre prénom">
+              <input type="text" class="form-control message" id="inputPrenom" placeholder="Votre prénom">
             </div>
             <div class="col-lg-6 col-md-12">
               <label for="inputNom" class="form-label">Nom *</label>
-              <input type="text" class="form-control" id="inputNom" placeholder="Votre nom">
+              <input type="text" class="form-control message" id="inputNom" placeholder="Votre nom">
             </div>
             <div class="col-12">
               <label for="inputAddress" class="form-label">Votre adresse</label>
@@ -222,9 +222,9 @@
               </div>
             </div>
             <p class="form-label">Les champs indiqués par * sont obligatoires</p>
-            <!-- <div class="text-center">
+            <div class="text-center">
 							<button type="submit" class="cta" id="submitInscription">Envoyer</button>
-						</div> -->
+						</div>
           </div>
         </form>
       </div>
@@ -332,6 +332,7 @@
   </script>
   <!-- script js -->
   <script src="eye.js" type="text/javascript"></script>
+  <script src="formulaire.js" type="text/javascript"></script>
 
   <!-- <script src="script.js" type="text/javascript"></script> -->
 
