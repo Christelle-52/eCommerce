@@ -6,7 +6,6 @@
 
 .inscription {
   background-image: url(images/inscription1.png);
-  /* height: 326px; */
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,9 +15,9 @@
   margin: 40px auto;
 }
 
-.formulaire {
+/* .formulaire {
   margin: 60px 0;
-}
+} */
 
 .formulaire .form-control::placeholder {
   font-size: 18px;

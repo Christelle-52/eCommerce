@@ -30,7 +30,7 @@ productScroll();
                 translateX(position); //translate items
               }
             });
-          }
+					}
         
           function hiddenItems() {
             //get hidden items

@@ -15,7 +15,7 @@ h1 {
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 54px;
 	font-weight: 700;
-	color: #85147A;
+	color: #9747FF;
 	text-shadow: 2px 0 #1f1f1f, -2px 0 #1f1f1f, 0 2px #1f1f1f, 0 -2px #1f1f1f,
 		1px 1px #1f1f1f, -1px -1px #1f1f1f, 1px -1px #1f1f1f, -1px 1px #1f1f1f;
 	text-align: center;
@@ -62,9 +62,10 @@ p {
 	margin-bottom: 5px;
 }
 
+
 .cta {
 	background-color: #EF6632;
-	border: solid 3px #85147A;
+	border: solid 3px #9747FF;
 	border-radius: 30px;
 	color: #F5F5F5;
 	font-weight: 800;
@@ -90,7 +91,7 @@ p {
 
 .ctaSmall {
 	background-color: #EF6632;
-	border: solid 2px #85147A;
+	border: solid 2px#9747FF;
 	border-radius: 35px;
 	color: #F5F5F5;
 	font-weight: 400;
