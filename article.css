@@ -74,3 +74,7 @@ td:nth-child(odd) {
   border-top: solid 2px  #9747FF;
 
 }
+
+#myTab .nav-item button {
+  color: #1f1f1f;
+}
