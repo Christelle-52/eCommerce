@@ -24,6 +24,10 @@
   <link rel="stylesheet" href="article.css">
   <link rel="stylesheet" href="panier.css">
 
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
   <title>ZenDog</title>
 
 </head>
@@ -112,7 +116,7 @@
               <li><a class="dropdown-item" href="article.html">Porc</a></li>
               <li><a class="dropdown-item" href="article.html">Poisson</a></li>
               <li><a class="dropdown-item" href="article.html">Autres</a></li>
-        </ul>
+            </ul>
           </div>
 
           <div class="dropdown">
@@ -172,65 +176,126 @@
       </div>
     </section>
   </header>
-
   <main>
-    <section class="container inscription my-4">
-      <div class="row gx-3 justify-content-end">
-        <form id="formulaire" class="col-xl-6 col-md-6 col-12 formulaire">
-          <div class="row champsForm">
-            <div class="col-lg-6 col-md-12">
-              <label for="inputPrenom" class="form-label">Votre prénom *</label>
-              <input type="text" class="form-control message" id="inputPrenom" placeholder="Votre prénom">
-            </div>
-            <div class="col-lg-6 col-md-12">
-              <label for="inputNom" class="form-label">Nom *</label>
-              <input type="text" class="form-control message" id="inputNom" placeholder="Votre nom">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Votre adresse</label>
-              <input class="form-control" id="inputAddress" placeholder="bât étage n°,  rue/bld/av">
-            </div>
-            <div class="col-lg-6 col-md-12">
-              <label for="inputZip" class="form-label">Code postal</label>
-              <input class="form-control" id="inputZip" placeholder="69001">
-            </div>
-            <div class="col-lg-6 col-md-12">
-              <label for="inputCity" class="form-label">Ville</label>
-              <input class="form-control" id="inputCity" placeholder="Lyon Cedex">
-            </div>
-            <div class="col-12">
-              <label for="inputEmail" class="form-label">Email *</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="example@server.com">
-            </div>
-            <div class="col-12">
-              <label for="inputPassword" class="form-label">Votre mot de passe *</label>
-              <div class="mdp d-flex">
-                <input type="password" class="form-control" id="inputPassword1"
-                  placeholder="5 car mini, 1 Maj, 1 car spécial et 1 chiffre">
-                <div class="password-icon">
-                  <i data-feather="eye"></i>
-                  <i data-feather="eye-off"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <label for="inputPassword" class="form-label">Confirmer votre mdp *</label>
-              <div class="mdp d-flex">
-                <input type="password" class="form-control" id="inputPassword2" placeholder="confirmer le mot de passe">
-                <div class="password-icon">
-                  <i data-feather="eye"></i>
-                  <i data-feather="eye-off"></i>
-                </div>
-              </div>
-            </div>
-            <p class="form-label">Les champs indiqués par * sont obligatoires</p>
-            <div class="text-center">
-							<button type="submit" class="cta" id="submitInscription">Envoyer</button>
-						</div>
-          </div>
-        </form>
-      </div>
+    <section class="container">
+
+      <span>&nbsp;</span>
+
+      <h3>POLITIQUE DE PROTECTION DES DONNEES PERSONNELLES</h3>
+
+      <h4>Introduction</h4>
+
+      <p>ZEN DOG comprend que la protection des données et de la vie privée soit un enjeu pour l’ensemble des
+        utilisateurs visitant le site ZEN DOG.</p>
+
+      <p>ZEN DOG s’engage, conformément à la règlementation RGPD, à respecter votre vie privée et à protéger vos données
+        à
+        caractère personnel, c’est à dire susceptible de vous identifier directement ou indirectement en tant que
+        personne.</p>
+
+      <p>L’objectif de la présente politique de respect de la vie privée est de vous présenter les engagements de ZEN
+        DOG
+        en la matière.</p>
+
+      <p>Quelles données à caractère personnel sont collectées par ZEN DOG ?</p>
+
+      <p>Nous collectons des informations lors de votre enregistrement sur notre site internet.</p>
+
+      <p>ZEN DOG est amené à collecter des données à caractère personnel directement auprès des utilisateurs lorsqu’ils
+        s’inscrivent via le site ZEN DOG : email, adresse personnelle et numéro de téléphone portable. En cas de
+        commande
+        sur le site ZEN DOG, ZEN DOG récolte les données nécessaires à la facturation.</p>
+
+      <p>Il vous est cependant possible de consulter notre site internet de façon anonyme.</p>
+
+      <p>ZEN DOG se base sur l’intérêt légitime pour la collecte de ces données et suit les recommandations de la CNIL
+        en
+        matière de prospection commerciale.</p>
+
+      <p>ZEN DOG collecte également des données que l’internaute n’a pas directement saisi telles que des identifiants
+        de
+        cookies ou les données de navigation.</p>
+
+      <p>Un bandeau cookie apparaît lors de la première visite sur le site ZEN DOG, il permet :</p>
+
+      <ul>
+        <li>D’informer l’internaute des finalités que le dépôt de cookies permet de réaliser</li>
+        <li>De renvoyer également l’internaute vers la politique de cookies qui détaille les données collectées et les
+          finalités associées</li>
+        <li>De s’opposer à la collecte de données non nécessaires au fonctionnement du site.</li>
+      </ul>
+      <p>La sécurité des informations personnelles relève d’une priorité absolue pour ZEN DOG. Nous mettons en place une
+        variété de mesures organisationnelles de sécurité afin de maintenir la confidentialité de vos informations
+        personnelles, et de les protéger contre la perte ou toute autre forme de traitement illicite.</p>
+
+      <p> Cette politique de confidentialité peut être modifiée si cela est jugé nécessaire. Si nous décidons de changer
+        notre politique de confidentialité, vous serez notifié et votre acceptation sera nécessaire. Nous afficherons
+        ces
+        changements sur cette page.</p>
+
+      <h4>A quoi servent les données à caractère personnel collectées par ZEN DOG ?</h4>
+
+      <p>Les données collectées nous servent principalement :</p>
+      <ul>
+        <li> A permettre d’effectuer des missions de tests</li>
+        <li> A réaliser des statistiques sur la fréquentation du site internet</li>
+        <li> A vous proposer les services</li>
+      </ul>
+
+      <h4>Où sont mes données ?</h4>
+
+      Le site est hébergé par blabla en France.
+
+      <h4>Est-ce que les données à caractère personnel sont transférées à des tiers ?</h4>
+
+      <p>ZEN DOG ne vend pas de données personnelles à des tiers.</p>
+
+      <p>ZEN DOG peut transférer des données personnelles à ses fournisseurs de services et aux partenaires de ZEN DOG,
+        dans le cadre des finalités mentionnées précédemment. Avant de le faire, ZEN DOG prend des mesures pour veiller
+        à
+        ce que les données personnelles soient traitées avec une protection adéquate tel que requise par les lois
+        spécifiques sur la protection des données.</p>
+
+      <p>Les fournisseurs de services concernés sont à ce jour :</p>
+      <ul>
+        <li> Pour les analyses de fréquentation du site : Facebook pixel </li>
+        <li> Pour les analyses de fréquentation du site : Google analytics </li>
+        <li> Pour les opérations de ciblage web : Google Adwords </li>
+      </ul>
+      <p>ZEN DOG peut transférer des données personnelles si la divulgation est requise, ou lorsque ZEN DOG le jugera
+        nécessaire pour satisfaire aux lois et autres textes applicables, ou pour protéger ou défendre ses droits ou
+        ceux
+        de ses employés, clients ou toute autre personne.</p>
+
+      <h4>Combien de temps ZEN DOG conserve mes données ?</h4>
+
+      Vos données personnelles ne seront pas conservées plus longtemps que nécessaire aux fins pour lesquelles elles ont
+      été récoltées, y compris au regard du respect des obligations légales et fiscales.
+
+      <h4>Comment puis-je exercer mon droit d’accès / modification / suppression / portabilité ?</h4>
+
+      <p>Chaque internaute peut exercer ces droits en adressant un email à l’adresse suivante :
+        admin@domaineducarnivore.com</p>
+
+      <p>Toute demande doit être accompagnée de la copie d’une pièce d’identité. ZEN DOG traitera votre demande dans les
+        meilleurs délais et sous un mois maximum.</p>
+
+      <p>Par ailleurs, sachez que vous disposez d’outils pour supprimer en autonomie certaines données que nous
+        collectons
+        ou stopper les communications :</p>
+
+      <p>Tous nos emails comprennent un lien permettant de vous désinscrire.</p>
+
+      <p>Certains paramétrages de navigateurs vous permettent de refuser / supprimer les cookies :
+        https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser</p>
+
+      <p>Certains outils vous permettent de sélectionner les cookies que vous acceptez ou refusez, tels que Your Online
+        Choices : http://www.youronlinechoices.com/fr/
+
+      </p>
+
     </section>
+
   </main>
 
   <footer class="container-fluid footerContainer p-0 m-0">
@@ -258,14 +323,14 @@
           <a href="#">FAQ & Contact</a>
           <a href="#">Conditions générales de vente</a>
           <a href="#">Frais de livraison</a>
-          <a href="#">Politique de confidentilité</a>
+          <a href="#">Politique de confidentialité</a>
 
         </div>
         <div class="col-lg-3 col-sm-6 col-12 footerItem">
           <h4>Acheter malin</h4>
           <a href="#">Offres spéciales</a>
           <a href="#">Offres du moment</a>
-          <a href="#">Déstockage</a>
+          <a href="#">Destockage</a>
           <a href="#">Points fidélité</a>
 
         </div>
@@ -316,6 +381,7 @@
     </div>
   </footer>
 
+
   <!-- script js bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
@@ -327,17 +393,9 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
-  <!-- ICON SCRIPT -->
-  <script src="https://unpkg.com/feather-icons"></script>
-  <script>
-    feather.replace();
-  </script>
+
   <!-- script js -->
-  <script src="eye.js" type="text/javascript"></script>
-  <script src="formulaire.js" type="text/javascript"></script>
-
   <!-- <script src="script.js" type="text/javascript"></script> -->
-
 </body>
 
 </html>

@@ -5,35 +5,34 @@
 
 
 .inscription {
-	background-image: url(images/inscription1.png);
-	/* height: 326px; */
-	display: flex;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center ;
-	justify-content: space-between;
-	border: solid 2px #85147A;
+  background-image: url(images/inscription1.png);
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-between;
+  border: solid 2px #85147A;
   margin: 40px auto;
 }
 
-.formulaire {
+/* .formulaire {
   margin: 60px 0;
-}
+} */
 
 .formulaire .form-control::placeholder {
-	font-size: 18px;
-	color: #85147A;
-	opacity: 0.6;
-	background-color: #F5F5F5;
+  font-size: 18px;
+  color: #85147A;
+  opacity: 0.6;
+  background-color: #F5F5F5;
 }
 
 .formulaire .form-label {
-font-size: 24px;
-font-weight: 700;
-color: #F5F5F5;
-padding-top: 25px;
-text-shadow: 2px 0 #85147A, -2px 0 #85147A, 0 2px #85147A, 0 -2px #85147A,
-1px 1px #85147A, -1px -1px #85147A, 1px -1px #85147A, -1px 1px #85147A;
+  font-size: 24px;
+  font-weight: 700;
+  color: #F5F5F5;
+  padding-top: 25px;
+  text-shadow: 2px 0 #85147A, -2px 0 #85147A, 0 2px #85147A, 0 -2px #85147A,
+    1px 1px #85147A, -1px -1px #85147A, 1px -1px #85147A, -1px 1px #85147A;
 }
 
 .formulaire .form-control {
@@ -41,25 +40,25 @@ text-shadow: 2px 0 #85147A, -2px 0 #85147A, 0 2px #85147A, 0 -2px #85147A,
   padding-left: 10px;
 }
 
-.champsForm input:focus{
+.champsForm input:focus {
   border: solid 2px #C2834B;
 }
 
 .champsForm .cta {
-margin: 30px auto;
+  margin: 30px auto;
 }
 
 .mdp {
   position: relative;
 }
 
-.mdp input:focus{
+.mdp input:focus {
   border: solid 2px #C2834B;
 }
 
 .mdp .password-icon {
   position: absolute;
-  top :50%;
+  top: 50%;
   right: 5px;
   display: flex;
   color: #85147A;
@@ -78,3 +77,12 @@ margin: 30px auto;
   display: none;
 }
 
+.message .erreur {
+  color: red;
+  box-shadow: 11px 11px 8px -1px rgba(255, 6, 30, 0.86);
+}
+
+.message .valide {
+  color: rgb(4, 45, 4);
+  box-shadow: 11px 11px 8px -1px rgba(4, 45, 4, 0.86);
+}
