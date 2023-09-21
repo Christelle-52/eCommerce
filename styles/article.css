@@ -45,9 +45,6 @@ td:nth-child(odd) {
   width: 100%;
   margin: 0 15px;
 }
-/* .textProduct {
-  border-bottom: solid 2px  #9747FF;
-} */
 
 .qty input {
   display: block;
@@ -64,10 +61,6 @@ td:nth-child(odd) {
   font-size: 20px;
   color: #1f1f1f;
 }
-
-/* .valueProduct {
-  padding-bottom: 0;
-} */
 
 .selectSizeQty {
   border-top: solid 2px  #9747FF;

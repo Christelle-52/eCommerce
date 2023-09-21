@@ -1,5 +1,6 @@
 .textCard span {
-  font-size: 24px;
+  font-size: 16px;
+  text-align: center;
 }
 
 article .product img {
@@ -41,3 +42,4 @@ iconify-icon {
 .codeReduce:hover {
   color: #C2834B;
 }
+
