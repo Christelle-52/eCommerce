@@ -35,7 +35,7 @@
 }
 
 .header {
-	background-image: url(images/ban.png);
+	background-image: url(../images/ban.png);
 	height: 326px;
 	display: flex;
 	flex-direction: column;
