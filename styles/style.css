@@ -107,7 +107,7 @@
 
 .card {
 	background-color: #F5F5F5;
-	border: solid 1px #9747FF;
+	border: solid 1px var(--secondary-color);
 	width: fit-content;
 	margin: 0 10px;
 	height: 400px;
@@ -120,7 +120,7 @@ margin-bottom: 10px;
 
 .gridCard .card {
 	background-color: #F5F5F5;
-	border: solid 1px #9747FF;
+	border: solid 1px var(--secondary-color);
 	height: auto;
 }
 
@@ -139,7 +139,7 @@ margin-bottom: 10px;
 
 #plusCommit {
 	text-decoration: none;
-	color: #85147A;
+	color: var(--secondary-color);
 	font-size: 24px;
 	text-align: center;
 	display: block;
@@ -149,12 +149,12 @@ margin-bottom: 10px;
 }
 
 #plusCommit:hover{
-	color: #C2834B;
+	color: var(--cta-hover-bgcolor);
 }
 
 .linkButtonProduct {
-	background-color: #EF6632;
-	border: solid 2px #85147A;
+	background-color: var(--cta-bg-color);
+	border: solid 2px var(--secondary-color);
 	border-radius: 35px;
 	color: #F5F5F5;
 	text-align: center;
@@ -165,12 +165,12 @@ margin-bottom: 10px;
 }
 
 #descriptProduct {
-	color: #85147A;
+	color: var(--secondary-color);
 	text-decoration: none;
 	padding: 7px 0;
 	font-style: italic;
 }
 
 #descriptProduct:hover {
-	color: #C2834B;
+	color: var(--cta-hover-bgcolor);
 }

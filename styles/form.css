@@ -1,17 +1,17 @@
 .inscription .form-control,
 .connexion .form-control {
-  border: solid 2px #85147A;
+  border: solid 2px var(--secondary-color);
 }
 
 
 .inscription {
-  background-image: url(images/inscription1.png);
+  background-image: url(../images/inscription1.png);
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   justify-content: space-between;
-  border: solid 2px #85147A;
+  border: solid 2px var(--secondary-color);
   margin: 40px auto;
 }
 
@@ -21,7 +21,7 @@
 
 .formulaire .form-control::placeholder {
   font-size: 18px;
-  color: #85147A;
+  color: var(--secondary-color);
   opacity: 0.6;
   background-color: #F5F5F5;
 }
@@ -31,8 +31,8 @@
   font-weight: 700;
   color: #F5F5F5;
   padding-top: 25px;
-  text-shadow: 2px 0 #85147A, -2px 0 #85147A, 0 2px #85147A, 0 -2px #85147A,
-    1px 1px #85147A, -1px -1px #85147A, 1px -1px #85147A, -1px 1px #85147A;
+  text-shadow: 2px 0 var(--secondary-color), -2px 0 var(--secondary-color), 0 2px var(--secondary-color), 0 -2px var(--secondary-color),
+    1px 1px var(--secondary-color), -1px -1px var(--secondary-color), 1px -1px var(--secondary-color), -1px 1px var(--secondary-color);
 }
 
 .formulaire .form-control {
@@ -41,7 +41,7 @@
 }
 
 .champsForm input:focus {
-  border: solid 2px #C2834B;
+  border: solid 2px var(--cta-hover-bgcolor);
 }
 
 .champsForm .cta {
@@ -53,7 +53,7 @@
 }
 
 .mdp input:focus {
-  border: solid 2px #C2834B;
+  border: solid 2px var(--cta-hover-bgcolor);
 }
 
 .mdp .password-icon {
@@ -61,7 +61,7 @@
   top: 50%;
   right: 5px;
   display: flex;
-  color: #85147A;
+  color: var(--secondary-color);
   align-items: center;
   transform: translateY(-50%);
   transition: all 0.2s;
@@ -70,10 +70,10 @@
 
 .password-icon :hover {
   cursor: pointer;
-  color: #C2834B;
+  color: var(--cta-hover-bgcolor);
 }
 
-.mdp .password-icon .feather-eye-off {
+.mdp .password-icon .fa-eye-slash {
   display: none;
 }
 

@@ -1,3 +1,11 @@
+:root {
+	--primary-color: #4E3C3E;
+	--secondary-color: #5d0761;
+	--cta-bg-color :#EF6632;
+	--cta-hover-bgcolor:#F5A080;
+	--text-color: #1f1f1f;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -15,7 +23,7 @@ h1 {
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 54px;
 	font-weight: 700;
-	color: #9747FF;
+	color: var(--secondary-color);
 	text-shadow: 2px 0 #1f1f1f, -2px 0 #1f1f1f, 0 2px #1f1f1f, 0 -2px #1f1f1f,
 		1px 1px #1f1f1f, -1px -1px #1f1f1f, 1px -1px #1f1f1f, -1px 1px #1f1f1f;
 	text-align: center;
@@ -27,7 +35,7 @@ h2 {
 	font-size: 48px;
 	font-style: italic;
 	font-weight: 700;
-	border-bottom: solid 1px #9747FF;
+	border-bottom: solid 1px var(--secondary-color);
 	padding: 5px 0 5px 10%;
 }
 
@@ -42,12 +50,12 @@ h4 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
 	font-weight: 700;
-	border-bottom: solid 1px #9747FF;
+	border-bottom: solid 1px var(--secondary-color);
 	padding: 10px 0;
 }
 
 h5 {
-	color: #4E3C3E;
+	color: var(--primary-color);
 	padding: 15px;
 }
 
@@ -69,8 +77,8 @@ p {
 
 
 .cta {
-	background-color: #EF6632;
-	border: solid 3px #9747FF;
+	background-color: var(--cta-bg-color);
+	border: solid 3px var(--secondary-color);
 	border-radius: 30px;
 	color: #F5F5F5;
 	font-weight: 800;
@@ -82,10 +90,10 @@ p {
 }
 
 .cta:hover {
-	background-color: #F5A080;
-	border: solid 3px #9747FF;
+	background-color: var(--cta-hover-bgcolor);
+	border: solid 3px var(--secondary-color);
 	border-radius: 30px;
-	color: #1f1f1f;
+	color: var(--text-color);
 	font-weight: 800;
 	font-size: 32px;
 	padding: 2px 3%;
@@ -95,8 +103,8 @@ p {
 }
 
 .ctaSmall {
-	background-color: #EF6632;
-	border: solid 2px#9747FF;
+	background-color: var(--cta-bg-color);
+	border: solid 2px var(--secondary-color);
 	border-radius: 35px;
 	color: #F5F5F5;
 	font-weight: 400;
@@ -110,8 +118,8 @@ p {
 }
 
 .ctaSmall:hover {
-	background-color: #F5A080;
-	border: solid 2px #9747FF;
+	background-color: var(--cta-hover-bgcolor);
+	border: solid 2px var(--secondary-color);
 	border-radius: 30px;
 	color: #1f1f1f;
 	font-weight: 400;

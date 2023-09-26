@@ -30,7 +30,7 @@ td:nth-child(odd) {
 }
 
 .textProduct h1, .textProduct p {
-  border-bottom: solid 2px  #9747FF;
+  border-bottom: solid 2px  var(--secondary-color);
   padding: 10px 0;
 }
 .textProduct h3 {
@@ -38,7 +38,7 @@ td:nth-child(odd) {
 }
 
 .text {
-  color: #9747FF;
+  color: var(--secondary-color);
 }
 
 .containerProduct img {
@@ -53,7 +53,7 @@ td:nth-child(odd) {
 .price p {
   border: none;
   font-size: 32px;
-  color: #9747FF;
+  color: var(--secondary-color);
 }
 
 .price small {
@@ -63,7 +63,7 @@ td:nth-child(odd) {
 }
 
 .selectSizeQty {
-  border-top: solid 2px  #9747FF;
+  border-top: solid 2px  var(--secondary-color);
 }
 
 #myTab .nav-item button {
@@ -71,7 +71,7 @@ td:nth-child(odd) {
 }
 
 .fa-circle-plus, .fa-circle-minus  {
-  color: #9747FF;
+  color: var(--secondary-color);
 }
 
 .input-group {
