@@ -1,16 +1,14 @@
 :root {
 	--primary-color: #4E3C3E;
 	--secondary-color: #5d0761;
-	--cta-bg-color :#EF6632;
-	--cta-hover-bgcolor:#F5A080;
+	--cta-bg-color: #EF6632;
+	--cta-hover-bgcolor: #F5A080;
 	--text-color: #1f1f1f;
-}
-
-* {
 	margin: 0;
 	padding: 0;
-	/* user-select: all; */
+
 }
+
 
 body {
 	font-family: 'Poppins', sans-serif;
@@ -74,7 +72,6 @@ p {
 	padding: 5px;
 	margin-bottom: 5px;
 }
-
 
 .cta {
 	background-color: var(--cta-bg-color);

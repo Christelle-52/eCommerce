@@ -14,6 +14,10 @@
   border-bottom: solid 0.5px var(--secondary-color);
 }
 
+.article small p {
+  padding: 10px 0;
+}
+
 .total, .ship {
   display: flex;
   justify-content: space-between;

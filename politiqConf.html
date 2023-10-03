@@ -25,7 +25,9 @@
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/article.css">
     <link rel="stylesheet" href="styles/panier.css">
-  
+    <link rel="stylesheet" href="styles/paiement.css">
+    <link rel="stylesheet" href="styles/profil.css">
+    
 
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"
     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
@@ -113,11 +115,11 @@
               Friandises
             </button>
             <ul class="dropdown-menu py-0">
-              <li><a class="dropdown-item" href="article.html">Poulet</a></li>
-              <li><a class="dropdown-item" href="article.html">Boeuf / Agneau</a></li>
-              <li><a class="dropdown-item" href="article.html">Porc</a></li>
-              <li><a class="dropdown-item" href="article.html">Poisson</a></li>
-              <li><a class="dropdown-item" href="article.html">Autres</a></li>
+              <li><a class="dropdown-item" href="categories.html">Poulet</a></li>
+              <li><a class="dropdown-item" href="categories.html">Boeuf / Agneau</a></li>
+              <li><a class="dropdown-item" href="categories.html">Porc</a></li>
+              <li><a class="dropdown-item" href="categories.html">Poisson</a></li>
+              <li><a class="dropdown-item" href="categories.html">Autres</a></li>
             </ul>
           </div>
 
@@ -303,18 +305,16 @@
   <footer class="container-fluid footerContainer p-0 m-0">
     <div class="container-fluid newsletter justify-content-center newsletter">
       <h2 id="bottom">Newsletter</h2>
-      <div class="row justify-content-between w-75 gy-2 mx-auto">
-
-        <div class="col-xl-6 col-md-12 mail d-flex">
-          <input class="form-control py-2" type="email" id="newsletter" name="newsletter"
-            placeholder="Votre adresse mail" aria-label="email">
-
+      <form action="merciNews.html">
+        <div class="row justify-content-between w-75 gy-2 mx-auto">
+          <div class="col-xl-6 col-md-12 mail d-flex">
+            <input class="form-control py-2" type="email" id="newsletter" name="newsletter"
+              placeholder="Votre adresse mail" aria-label="email" required="">
+          </div>
+          <!-- CTA -->
+          <input type="submit" value="Je m'inscris" class="col-xl-2 col-md-3 cta py-0">
         </div>
-        <!-- CTA -->
-        <a class="col-xl-2 col-md-3 cta py-0" href="inscription.html" role="button">
-          Je m'inscris
-        </a>
-      </div>
+      </form>
     </div>
 
     <div class="container-fluid">
@@ -322,10 +322,10 @@
         <div class="col-lg-3 col-sm-6 col-12 footerItem">
           <h4>Services</h4>
           <a href="connexion.html">Mon compte</a>
-          <a href="#">FAQ & Contact</a>
+          <a href="contact.html">FAQ & Contact</a>
           <a href="#">Conditions générales de vente</a>
-          <a href="#">Frais de livraison</a>
-          <a href="#">Politique de confidentialité</a>
+          <a href="shipping.html"Frais de livraison</a>
+          <a href="politiqConf.html">Politique de confidentialité</a>
 
         </div>
         <div class="col-lg-3 col-sm-6 col-12 footerItem">
@@ -338,7 +338,7 @@
         </div>
         <div class="col-lg-3 col-sm-6 col-12 footerItem">
           <h4>Où nous trouver</h4>
-          <a href="#" class="coordonnees">
+          <a href="coordonnees.html" class="coordonnees">
             <div class="address">
               <p>46, rue du Code</p>
               <p>57190 FLORANGE</p>

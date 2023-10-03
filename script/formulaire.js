@@ -1,61 +1,67 @@
-let form = document.getElementById('formulaire');
-// let verifEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
-// let verifPassword = /^((?=.*[\d])(?=.*[a-z])(?=.*[A-Z])|(?=.*[a-z])(?=.*[A-Z])(?=.*[^\w\d\s])|(?=.*[\d])(?=.*[A-Z])(?=.*[^\w\d\s])|(?=.*[\d])(?=.*[a-z]) (?=.*[^\w\d\s])).{8,}$/.test(password);
+inputText = [...document.querySelectorAll('input[type="text"]')];
+inputPass = [...document.querySelectorAll('input[type="password"]')];
+inputEmail = document.querySelector('input[type="email"]');
+regExpEmail = /^[\w-.]+@([\w-]+.)+[\w-]{2,4}$/;
 
-inputText = document.querySelectorAll('input[type="text"]');
-inputPass = document.querySelectorAll('input[type="password"]');
-
-function testerChampText() {
-  inputText.forEach(function (inputValue) {
-    if (inputValue.value < 3) {
-      inputValue.value = "3 caractères minimum";
-      inputValue.style.color = "red";
-      inputValue.style.boxShadow = "5px 5px 5px red";
-    }
-    else {
-      return false;
-    };
-  });
+function verifierMdp(mdp) {
+  return /^(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=!])(?=.*[a-zA-Z]).{8,}$/.test(mdp);
 };
 
-function testerChampPass() {
-  inputPass.forEach(function (inputValue) {
-    if (inputValue.value === '' || !verifPassword) {
-      inputValue.type = "text";
-      inputValue.value = "5 car mini, 1 Maj, 1 car spécial et 1 chiffre";
-      inputValue.style.color = "red";
-      inputValue.style.boxShadow = "5px 5px 5px red";
-    }
-    else {
-      return false;
-    };
-  });
+function verifierEmail() {
+  if (!regExpEmail.test(inputEmail.value)) {
+    inputEmail.placeholder = "Email invalide";
+    inputEmail.style.boxShadow = "5px 5px 5px red";
+  }
+  else {
+    inputEmail.style.boxShadow = "none";
+    return true
+  };
 };
 
-function resetChamp() {
-  inputPass.forEach(function (resetValue) {
-    // resetValue.value = "";
-    // resetValue.type = "password";
-    resetValue.style.color = "black";
-    resetValue.style.boxShadow = "none"; 
-  });
-  inputText.forEach(function (resetValue) {
-    // resetValue.value = "";
-    resetValue.style.color = "black";
-    resetValue.style.boxShadow = "none"; 
-  });
-}
+function verifierText() {
+  for (const input of inputText) {
+    if (input.value.length < 3) {
+      input.placeholder = "3 caractères minimum";
+      input.style.boxShadow = "5px 5px 5px red";
+    }
+    else {
+      input.style.boxShadow = "none";
+      return true
+    };
+  };
+};
 
-form.addEventListener('submit', function (e) {
-  e.preventDefault(); // Empêcher le formulaire de se soumettre normalement
-  testerChampText();
-  testerChampPass();
-});
+function verifierPass() {
+  for (const input of inputPass) {
+    if (!verifierMdp(inputPass[0].value)) {
+      input.placeholder = "8 car mini, 1 Maj, 1 car spécial et 1 chiffre";
+      input.style.boxShadow = "5px 5px 5px red";
+    }
+    else if (inputPass[0].value != inputPass[1].value) {
+      inputPass[0].style.boxShadow = "none";
+      inputPass[1].placeholder = "le mdp n'est pas identique";
+      inputPass[1].style.boxShadow = "5px 5px 5px red";
+    }
+    else {
+      return true
+    }
+  };
+};
 
-form.addEventListener('click', function () {
-  resetChamp();
-});
+function verifierForm() {
+  verifierText();
+  verifierEmail();
+  verifierPass();
 
+  if (!verifierText() || !verifierEmail() || !verifierPass()) {
+    return false;
+  }
+  else {
+    return true;
+  };
+};
 
-
-
+// form.addEventListener('submit', e => {
+//   e.preventDefault(); // Empêcher le formulaire de se soumettre normalement
+//   verifierForm();
+// });

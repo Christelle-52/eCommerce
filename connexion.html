@@ -24,7 +24,9 @@
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/article.css">
     <link rel="stylesheet" href="styles/panier.css">
-  
+    <link rel="stylesheet" href="styles/paiement.css">
+    <link rel="stylesheet" href="styles/profil.css">
+    
 
   <title>ZenDog</title>
 
@@ -109,11 +111,11 @@
               Friandises
             </button>
             <ul class="dropdown-menu py-0">
-              <li><a class="dropdown-item" href="article.html">Poulet</a></li>
-              <li><a class="dropdown-item" href="article.html">Boeuf / Agneau</a></li>
-              <li><a class="dropdown-item" href="article.html">Porc</a></li>
-              <li><a class="dropdown-item" href="article.html">Poisson</a></li>
-              <li><a class="dropdown-item" href="article.html">Autres</a></li>
+              <li><a class="dropdown-item" href="categories.html">Poulet</a></li>
+              <li><a class="dropdown-item" href="categories.html">Boeuf / Agneau</a></li>
+              <li><a class="dropdown-item" href="categories.html">Porc</a></li>
+              <li><a class="dropdown-item" href="categories.html">Poisson</a></li>
+              <li><a class="dropdown-item" href="categories.html">Autres</a></li>
             </ul>
           </div>
 
@@ -178,17 +180,17 @@
   <main>
     <section class="container connexion my-4">
       <div class="row gx-3 justify-content-center">
-        <form class="col-xl-8 col-md-8 col-8 formulaire">
+        <form class="col-xl-8 col-md-8 col-8 formulaire" action="profil.html">
           <div class="row champsForm justify-content-center">
             <div class="col-12">
               <label for="inputEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="exemple@server.com">
+              <input type="email" class="form-control" id="inputEmail" placeholder="exemple@server.com" required>
             </div>
             <div class="col-12">
               <label for="inputPassword" class="form-label">Votre mot de passe</label>
               <div class="mdp d-flex">
                 <input type="password" class="form-control" id="inputPassword1"
-                  placeholder="5 car mini, 1 Maj, 1 car spécial et 1 chiffre">
+                  placeholder="8 car mini, 1 Maj, 1 car spécial et 1 chiffre" pattern="(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=!])(?=.*[a-zA-Z]).{8,}" required>
                 <div class="password-icon">
                   <i class="fas fa-solid fa-eye fa-2xl"></i>
                   <i class="fas fa-solid fa-eye-slash fa-2xl"></i>
@@ -213,18 +215,16 @@
   <footer class="container-fluid footerContainer p-0 m-0">
     <div class="container-fluid newsletter justify-content-center newsletter">
       <h2 id="bottom">Newsletter</h2>
-      <div class="row justify-content-between w-75 gy-2 mx-auto">
-
-        <div class="col-xl-6 col-md-12 mail d-flex">
-          <input class="form-control py-2" type="email" id="newsletter" name="newsletter"
-            placeholder="Votre adresse mail" aria-label="email">
-
+      <form action="merciNews.html">
+        <div class="row justify-content-between w-75 gy-2 mx-auto">
+          <div class="col-xl-6 col-md-12 mail d-flex">
+            <input class="form-control py-2" type="email" id="newsletter" name="newsletter"
+              placeholder="Votre adresse mail" aria-label="email" required="">
+          </div>
+          <!-- CTA -->
+          <input type="submit" value="Je m'inscris" class="col-xl-2 col-md-3 cta py-0">
         </div>
-        <!-- CTA -->
-        <a class="col-xl-2 col-md-3 cta py-0" href="inscription.html" role="button">
-          Je m'inscris
-        </a>
-      </div>
+      </form>
     </div>
 
     <div class="container-fluid">
@@ -232,10 +232,10 @@
         <div class="col-lg-3 col-sm-6 col-12 footerItem">
           <h4>Services</h4>
           <a href="connexion.html">Mon compte</a>
-          <a href="#">FAQ & Contact</a>
+          <a href="contact.html">FAQ & Contact</a>
           <a href="#">Conditions générales de vente</a>
-          <a href="#">Frais de livraison</a>
-          <a href="#">Politique de confidentilité</a>
+          <a href="shipping.html"Frais de livraison</a>
+          <a href="politiqConf.html">Politique de confidentialité</a>
 
         </div>
         <div class="col-lg-3 col-sm-6 col-12 footerItem">
@@ -248,7 +248,7 @@
         </div>
         <div class="col-lg-3 col-sm-6 col-12 footerItem">
           <h4>Où nous trouver</h4>
-          <a href="#" class="coordonnees">
+          <a href="coordonnees.html" class="coordonnees">
             <div class="address">
               <p>46, rue du Code</p>
               <p>57190 FLORANGE</p>
